@@ -10,8 +10,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import dto.kadai;
-import util.PW;
+import dao.KadaiDAO;
+import dto.Kadai;
+import util.GenerateHashedPw;
 
 /**
  * Servlet implementation class login
@@ -37,7 +38,7 @@ public class login extends HttpServlet {
 		String pw = request.getParameter("pw");
 		
 		// 入力されたIDをもとにソルトを取得する。
-		String salt = kadaiDAO.getSalt(mail);
+		String salt = KadaiDAO.getSalt(mail);
 		
 		// 取得したソルトがnullの場合は対象のユーザがいないので、Errorでログイン画面に戻す
 		if(salt == null) {
@@ -48,10 +49,10 @@ public class login extends HttpServlet {
 		}
 		
 		// 取得したソルトを使って入力したPWをハッシュ
-		String hashedPw = PW.getSafetyPassword(pw, salt);
+		String hashedPw = GenerateHashedPw.getSafetyPassword(pw, salt);
 		
 		// 入力されたID、ハッシュしたPWに一致するユーザを検索する
-		kadai account = kadaiDAO.login(mail, hashedPw);
+		Kadai account = KadaiDAO.login(mail, hashedPw);
 		
 		// 一致するユーザがいなければ、ログイン失敗
 		if(account == null) {
