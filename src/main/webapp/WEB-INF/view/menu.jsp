@@ -9,5 +9,6 @@
 <body>
 	<h1>トップページ</h1>
 	<a href="SelectAllServlet">一覧へ</a>
+	<a href="Logout">ログアウト</a>
 </body>
 </html>

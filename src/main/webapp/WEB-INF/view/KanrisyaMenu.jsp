@@ -8,5 +8,6 @@
 </head>
 <body>
 	<h1>管理者トップページ</h1>
+	<a href="Logout">ログアウト</a>
 </body>
 </html>
