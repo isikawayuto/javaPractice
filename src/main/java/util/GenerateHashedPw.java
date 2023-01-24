@@ -66,10 +66,12 @@ public class GenerateHashedPw {
         return sb.toString();
     }
     
-    public  static void main(String[] args) {
+
+    public static void main(String[] args) {
 		String pw = "morijyobi";
-		String salt = GenerateSalt.getSalt(10);
+		String salt = "AFDS2093ASGRoi93";
 		String hasedPw = GenerateHashedPw.getSafetyPassword(pw, salt);
-		System.out.print(hasedPw);
-	}
+		System.out.println(hasedPw);
+    }	
 }
+   
