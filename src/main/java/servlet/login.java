@@ -56,6 +56,8 @@ public class login extends HttpServlet {
 		
 		// 一致するユーザがいなければ、ログイン失敗
 		if(account == null) {
+			HttpSession session = request.getSession();
+			session.setAttribute("fail", account);
 			String view = "./?error=1";
 			RequestDispatcher dispatcher = request.getRequestDispatcher(view);
 			dispatcher.forward(request, response);
