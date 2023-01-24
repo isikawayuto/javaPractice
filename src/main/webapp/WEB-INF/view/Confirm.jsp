@@ -5,9 +5,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet"href="css/form.css">
 <title>Insert title here</title>
 </head>
 <body>
+<div>
 	<p>下記の内容で登録します。よろしいですか？</p>
 	<%
 		Account account = (Account)session.getAttribute("input_data");
@@ -22,5 +24,6 @@
 	パスワード：********<br>
 	<a href="Execute">OK</a><br>
 	<a href="NewCustomer">戻る</a>
+</div>
 </body>
 </html>
