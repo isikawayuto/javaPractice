@@ -5,9 +5,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet"href="css/form.css">
 <title>ログイン</title>
 </head>
 <body>
+<div>
 	<%
 		request.setCharacterEncoding("UTF-8");
 		if(request.getParameter("error") != null){
@@ -34,5 +36,6 @@
 	<%
 		}
 	%>
+</div>
 </body>
 </html>
