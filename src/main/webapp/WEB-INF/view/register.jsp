@@ -49,6 +49,10 @@
 	</form>
 	<% } %>
 	<a href="TopServlet">戻る</a>
+<<<<<<< HEAD
 </div>	
+=======
+</div>
+>>>>>>> 9515ce41dabb6680b37ac33c9d263ae68322513b
 </body>
 </html>
