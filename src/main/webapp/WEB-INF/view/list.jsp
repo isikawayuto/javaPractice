@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="dto.Human" %>
+<%@ page import="dto.Account" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,8 +22,8 @@
 			<th>メール</th>
 		</tr>
 	<%
-	List<Human> list = (ArrayList<Human>)request.getAttribute("list");
-	for(Human h : list) {
+	List<Account> list = (ArrayList<Account>)request.getAttribute("list");
+	for(Account h : list) {
 	%>
 		<tr>
 			<td><%=h.getId() %></td>
