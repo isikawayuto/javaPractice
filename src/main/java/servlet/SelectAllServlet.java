@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import dao.ListDAO;
-import dto.Human;
+import dao.AccountDAO;
+import dto.Account;
 
 /**
  * Servlet implementation class SelectAllServlet
@@ -33,7 +33,7 @@ public class SelectAllServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// DBから全件データを取得
-				List<Human> humanlist = ListDAO.selectAllHuman();
+				List<Account> humanlist = AccountDAO.selectAllHuman();
 				
 				// 取得したリストをリクエストスコープに保管(JSPに渡すため)
 				request.setAttribute("list", humanlist);
