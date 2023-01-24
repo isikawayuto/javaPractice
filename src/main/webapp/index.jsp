@@ -14,7 +14,7 @@
 			Account ac = (Account)session.getAttribute("data");
 	%>
 	<h1 style="color:red">ログイン失敗</h1>
-		<form action="LoginServlet" method="post" class="form">
+		<form action="login" method="post" class="form">
 				<h2>メールアドレスとパスワードを入力してください</h2>
 				<input type="text" name="mail" value="<%=request.getParameter("mail") %>">
 				<input type="password" name="pw">
@@ -24,7 +24,7 @@
 	<%
 		} else {
 	%>
-		<form action="LoginServlet" method="post" class="form">
+		<form action="login" method="post" class="form">
 				<h2>メールアドレスとパスワードを入力してください</h2>
 				<input type="text" name="mail">
 				<input type="password" name="pw">

@@ -7,6 +7,8 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 import dto.Account;
 import util.GenerateHashedPw;
@@ -146,7 +148,7 @@ public class AccountDAO {
 					String tel = rs.getString("tel");
 					String mail = rs.getString("mail");
 
-					Account account = new Human(id, name, age, gender, birthday, address, tel, mail null, null);
+					Account account = new Account(id, name, age, gender, birthday, address, tel, mail, null, null);
 					
 					result.add(account);
 				}
