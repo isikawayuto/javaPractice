@@ -7,9 +7,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet"href="css/form.css">
 <title>一覧表示</title>
 </head>
 <body>
+<div>
 	<table border="1">
 		<tr>
 			<td>ID</td>
@@ -37,5 +39,10 @@
 		</tr>
 	<%} %>
 	</table>
+<<<<<<< HEAD
+</div>	
+=======
+</div>
+>>>>>>> 9515ce41dabb6680b37ac33c9d263ae68322513b
 </body>
 </html>

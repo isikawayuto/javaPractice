@@ -5,9 +5,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet"href="css/form.css">
 <title>Insert title here</title>
 </head>
 <body>
+<div>
 	<% 
 		String error = request.getParameter("error");
 		if(error != null){
@@ -47,6 +49,10 @@
 	</form>
 	<% } %>
 	<a href="TopServlet">戻る</a>
-	
+<<<<<<< HEAD
+</div>	
+=======
+</div>
+>>>>>>> 9515ce41dabb6680b37ac33c9d263ae68322513b
 </body>
 </html>
