@@ -22,6 +22,7 @@ public class GenerateSalt {
 		return sb.toString();
 	}
 	
+
 	public static void main(String[] args) {
 		String salt = GenerateSalt.getSalt(10);
 		System.out.println(salt);
