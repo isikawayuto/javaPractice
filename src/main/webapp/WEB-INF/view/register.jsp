@@ -48,7 +48,7 @@
 			<input type="submit" value="送信">
 	</form>
 	<% } %>
-	<a href="TopServlet">戻る</a>
+	<a href="./">戻る</a>
 </div>	
 
 </body>
